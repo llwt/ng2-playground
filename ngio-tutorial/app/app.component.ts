@@ -10,6 +10,13 @@ interface Hero {
   template: `
     <h1>{{ title }}</h1>
     <h2>{{ hero.name }} details!</h2>
+    <div><label>id: </label>{{ hero.id }}</div>
+    <div>
+      <label>Name: </label>
+      <div>
+        <input [(ngModel)]="hero.name" placeholder="name">
+      </div>
+    </div>
   `
 })
 export class AppComponent {
